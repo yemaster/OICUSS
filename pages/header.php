@@ -18,11 +18,11 @@
               <?php if ($_SESSION["username"]) { ?>
 	<a href="/user/1787" style="color: inherit; ">
               <div class="ui simple dropdown item">
-                yemaster <i class="dropdown icon"></i>
+                <?php echo $_SESSION["username"];?> <i class="dropdown icon"></i>
                 <div class="menu">
-                  <a class="item" href="/user/1787/edit"><i class="edit icon"></i>修改资料</a>
+                  <a class="item" href="editinfo.php"><i class="edit icon"></i>修改资料</a>
                   
-                  <a class="item" href-post="/logout?url=%2Fdiscussion%2Fglobal"><i class="power icon"></i>注销</a>
+                  <a class="item" href="logout.php"><i class="power icon"></i>注销</a>
                 </div>
 	<?php }else { ?>
 	<div class="item">

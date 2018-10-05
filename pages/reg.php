@@ -1,17 +1,11 @@
-﻿
-
-
-
-
-
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="zh-CN">
 <head data-csrf-token="">
 <meta charset="utf-8">
     <meta content="IE=edge" http-equiv="X-UA-Compatible">
     <meta name="viewport" content="width=1200">
     <link rel="icon" href="/logoIcon.png">
-    <title>登录 - OICUSS</title>
+    <title>注册 - OICUSS</title>
 <!-- loj.ac -->
 <!-- new.loj.ac:52800 -->
 
@@ -49,10 +43,10 @@
     <div class="column" style="max-width: 450px">
       <h2 class="ui image header">
         <div class="content">
-          登录
+          注册
         </div>
       </h2>
-      <form class="ui large form" method="post" action="api/login.php">
+      <form class="ui large form" method="post" action="api/reg.php">
         <div class="ui existing segment">
           <div class="field">
             <div class="ui left icon input">
@@ -62,8 +56,20 @@
           </div>
           <div class="field">
             <div class="ui left icon input">
+              <i class="mail icon"></i>
+              <input name="mail" placeholder="邮箱" type="email" id="mail" required />
+            </div>
+          </div>
+          <div class="field">
+            <div class="ui left icon input">
               <i class="lock icon"></i>
               <input name="password" placeholder="密码" type="password" id="password" required />
+            </div>
+          </div>
+          <div class="field">
+            <div class="ui left icon input">
+              <i class="lock icon"></i>
+              <input name="rpass" placeholder="重复密码" type="password" id="rpass" required />
             </div>
           </div>
           <input type="submit" value="登陆" class="ui fluid large submit button" id="login" />

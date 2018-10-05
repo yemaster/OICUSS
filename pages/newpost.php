@@ -51,10 +51,10 @@
   <div id="layout">
             <header>
 	<h1>新主题</h1>
-	<form action="api/newpost.php" method="get" class="ui form">
+	<form action="api/newpost.php" method="post" class="ui form">
 	
 	<div style="float:left;width:50%"><input type="text" name="title" id="tt" placeholder="标题" /><input type="hidden" name="message" id="msg"/></div>
-	<div style="float:left;width:20%"><select id="fby"><?php 
+	<div style="float:left;width:20%"><select name="fby" id="fby"><?php 
 for($i=1;$i<=$totbk;$i++) {
 ?>
 	<option value="<?php echo $i;?>" <?php if ($i==$thisid) echo "selected";?>><?php echo $bkname[$i];?></option>
